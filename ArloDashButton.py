@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     basestation = [ device for device in arlo.GetDevices() if device['deviceType'] == 'basestation' ]
 
     if event['clickType'] == "DOUBLE":
-	arlo.Disarm(basestation[0]['deviceId'], basestation[0]['xCloudId'])
+	    arlo.Disarm(basestation[0]['deviceId'], basestation[0]['xCloudId'])
         message = "Arlo Cameras DISABLED"
     else:
         arlo.Arm(basestation[0]['deviceId'], basestation[0]['xCloudId'])
