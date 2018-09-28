@@ -1,1 +1,8 @@
 secrets.bash
+Scripts
+bin
+lib
+include
+.vscode
+pyvenv.cfg
+pip-selfcheck.json
